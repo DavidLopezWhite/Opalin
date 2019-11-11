@@ -37,3 +37,16 @@ Array.from(document.getElementsByClassName('nav-toggle')).forEach(function(el) {
 document.addEventListener('touchmove', function(evt) {
   evt.preventDefault();
 });
+
+// Navbar padding and size scale //
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "0px 20px";
+//    document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.padding = "30px 10px";
+//    document.getElementById("logo").style.fontSize = "35px";
+  }
+}

@@ -271,6 +271,7 @@ section {
 
 #navbar {
   overflow: hidden;
+  position: sticky;
 /*  background-color: #333; */
 }
 /* Navbar links */
@@ -281,6 +282,7 @@ section {
   text-align: center;
   padding: 14px;
   text-decoration: none;
+
 }
 
 /* Page content */
@@ -2104,13 +2106,18 @@ form .form-help {
 # Components - Header
 
 ----------------------------------------------------------------------------- */
+
+
 .no-scroll {
   overflow: hidden;
 }
 
 .header-main {
-  background: transparent;
-  position: absolute;
+  /* what about color before? */
+  /* background: transparent; */
+  background: #110F24;
+/* here */
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 1;
