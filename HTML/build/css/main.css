@@ -2107,6 +2107,15 @@ form .form-help {
 
 ----------------------------------------------------------------------------- */
 
+#navbar.navbarScroll {
+  padding: 0px 24px 24px 24px;
+  transition: all 0.35s ease-out;
+}
+
+#navbar.navbarTop {
+  padding: 30px 24px;
+  transition: all 0.35s ease-in;
+}
 
 .no-scroll {
   overflow: hidden;
@@ -2125,7 +2134,7 @@ form .form-help {
 
 .header-main nav {
   display: inline-block;
-  padding: 2rem;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -2624,4 +2633,16 @@ table td {
     height: 12rem;
     position: relative;
   }
+}
+/* -----------------------------------------------------------------------------
+
+# Carousel - DLW
+
+----------------------------------------------------------------------------- */
+ol.carousel-indicators {
+  display: inline-block;
+}
+
+span.carousel-control-prev-icon, span.carousel-control-next-icon {
+  color: #3d3d3d !important;
 }
