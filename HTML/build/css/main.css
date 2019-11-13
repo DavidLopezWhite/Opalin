@@ -2106,7 +2106,12 @@ form .form-help {
 # Components - Header
 
 ----------------------------------------------------------------------------- */
-
+/*.navbar-center {
+  display: inline;
+  max-height: 48px;
+  max-width: 48px;
+}
+*/
 #navbar.navbarScroll {
   padding: 0px 24px 24px 24px;
   transition: all 0.35s ease-out;
@@ -2639,10 +2644,20 @@ table td {
 # Carousel - DLW
 
 ----------------------------------------------------------------------------- */
+
+/* For the bottom icons/indicators
 ol.carousel-indicators {
   display: inline-block;
 }
-
+*/
 span.carousel-control-prev-icon, span.carousel-control-next-icon {
-  color: #3d3d3d !important;
+  background-color: #3d3d3d;
+}
+.carousel-indicators {
+  display: block;
+  position: relative;
+  right: auto;
+  left: auto;
+  bottom: auto;
+
 }

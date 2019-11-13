@@ -14,26 +14,27 @@
   <link rel="stylesheet" href="css/main.css">
 
 </head>
-<body class="page page-home preload">
+<body class="page page-home preload" id="home-section">
 
   <header class="header-main dark">
     <nav id="navbar" class="navbarTop">
-      <a href="index.html" class="logo" rel="home"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24"><path d="M7.335 1.023l2.462.434a1 1 0 0 1 .811 1.159L8.004 17.388a2 2 0 0 1-2.317 1.622l-3.94-.694a1 1 0 0 1-.81-1.159L3.28 3.862a3.5 3.5 0 0 1 4.054-2.839zm7.039 3.272l7.878 1.39a1 1 0 0 1 .812 1.158l-1.997 11.325a5.5 5.5 0 0 1-6.372 4.461l-4.431-.78a1 1 0 0 1-.812-1.16l2.605-14.771a2 2 0 0 1 2.317-1.623z" fill="currentColor"/></svg><span></span></a>
-      <div class="nav-toggle"></div>
+      <!--<a href="index.html" class="logo" rel="home"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24"><path d="M7.335 1.023l2.462.434a1 1 0 0 1 .811 1.159L8.004 17.388a2 2 0 0 1-2.317 1.622l-3.94-.694a1 1 0 0 1-.81-1.159L3.28 3.862a3.5 3.5 0 0 1 4.054-2.839zm7.039 3.272l7.878 1.39a1 1 0 0 1 .812 1.158l-1.997 11.325a5.5 5.5 0 0 1-6.372 4.461l-4.431-.78a1 1 0 0 1-.812-1.16l2.605-14.771a2 2 0 0 1 2.317-1.623z" fill="currentColor"/></svg><span></span></a>
+      -->
+        <div class="nav-toggle"></div>
       <ul class="inline">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="pricing.html">Work</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="#home-section" class="active">Home</a></li>
+        <li><a href="#work-section">Work</a></li>
+        <li><a href="#about-section">About</a></li>
       </ul>
       <ul class="inline right">
         <!-- <li><a href="login.html">Log In</a></li> -->
-        <li><a href="signup.html" class="button button-secondary button-m full-width-tablet" role="button">Contact</a></li>
+        <li><a href="#contact-section" role="button">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-
+    
     <section class="bg-image-hero center-tablet dark overlay-hero">
       <div class="full-screen -margin-bottom middle padding padding-top-tablet">
         <div class="row max-width-l">
@@ -53,7 +54,7 @@
       </div>
 
 <!-- Projects/Work section -->
-      <div class="padding">
+      <div class="padding" id="work-section">
         <h2 style="text-align: center; margin: 0px 0px 64px 0px;">Work</h2>
         <div class="row margin-bottom max-width-l">
           <div class="col-one-half middle">
@@ -97,6 +98,34 @@
         </div>
       </div>
     </section>
+
+    <!-- My Process -->
+    <section class="padding">
+        <div class="max-width-l">
+          <div class="center">
+            <h2>Process</h2>
+            <p class="paragraph">Iterative design, testing, validation and continuous delivery.</p>
+          </div>
+          <div class="row margin-top timeline">
+            <div class="col-one-fourth">
+              <h5>Discovery</h5>
+              <p>Research, collaboration with stakeholders, competitive analysis are the foundation for my work.</p>
+            </div>
+            <div class="col-one-fourth">
+              <h5>Ideation</h5>
+              <p>Whether working independently or on a team, I like to evolve my ideas through sketching, prototyping and testing.</p>
+            </div>
+            <div class="col-one-fourth">
+              <h5>Development</h5>
+              <p>I use an MVP approach along with Agile methodologies for solid builds that are deliverable at any stage.</p>
+            </div>
+            <div class="col-one-fourth">
+              <h5>Launch</h5>
+              <p>Final checks for product requirements and running tests on functionality are important, and validating product fit with users is key.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 <!-- Original Section Disabled -->
     <!--<section class="bg-gradient-light -margin-bottom-2 overlay padding">
       <div class="center max-width-m">
@@ -133,10 +162,10 @@
     </section>
 -->
 <!-- About Me section -->
-      <section class="bg-gradient-light center padding padding-top">
+      <section class="bg-gradient-light center padding padding-top" id="about-section">
         <div class="max-width-m">
-          <p class="muted">About Me</p>
-          <h1 class="hero">A designer that is 100% all of the time, and never quits.</h1>
+          <h2>About Me</h2>
+          <h4 class="hero">A designer that is 100% all of the time, and never quits.</h1>
         </div>
       </section>
       <section class="bg-gradient-light padding">
@@ -163,34 +192,8 @@
           </div>
         </div>
       </section>
-<!-- My Process -->
-    <section class="padding">
-      <div class="max-width-l">
-        <div class="center">
-          <h2>Process</h2>
-          <p class="paragraph">Iterative design, testing, validation and continuous delivery.</p>
-        </div>
-        <div class="row margin-top timeline">
-          <div class="col-one-fourth">
-            <h5>Discovery</h5>
-            <p>Research, collaboration with stakeholders, competitive analysis are the foundation for my work.</p>
-          </div>
-          <div class="col-one-fourth">
-            <h5>Ideation</h5>
-            <p>Whether working independently or on a team, I like to evolve my ideas through sketching, prototyping and testing.</p>
-          </div>
-          <div class="col-one-fourth">
-            <h5>Development</h5>
-            <p>I use an MVP approach along with Agile methodologies for solid builds that are deliverable at any stage.</p>
-          </div>
-          <div class="col-one-fourth">
-            <h5>Launch</h5>
-            <p>Final checks for product requirements and running tests on functionality are important, but validating product fit with users is key.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-<!-- Testimonials -->
+
+<!-- Testimonials 
 <section class="bg-gradient-light center padding">
   <div class="max-width-l bg-gradient-light">
     <div class="margin-bottom max-width-m">
@@ -205,38 +208,33 @@
       </div>
     </div>
   </div>
-</section>
-<!-- Bootstrap carousel -->
-<section class="bg-gradient-light center padding">
+</section> -->
 
+<!-- Bootstrap carousel Testimonials -->
+<section class="bg-gradient-light center padding">
+    <h2>Testimonials</h2>
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">O</li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1">OO</li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2">OOO</li>
-    </ol>
+    
     <div class="max-width-l bg-gradient-light">
       <div class="margin-bottom max-width-m">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <h2>Testimonials</h2>
         <h4>Mariano Garcia, Senior UX Designer at Evernote says:</h4>
         <p class="paragraph" font-style: italic;>"David was an integral part of refining our platform during our pre- and early stage launch. He worked seamlessly across channels, and improved communication between our market research and design teams."</p>
 
       </div>
-      <div class="carousel-item">
-        <h2>Testimonials</h2>
+      <div class="carousel-item">   
         <h4>Morten Lundsby, Senior UX Designer at Evernote says:</h4>
-        <p class="paragraph" font-style: italic;>"David was an integral part of refining our platform during our pre- and early stage launch. He worked seamlessly across channels, and improved communication between our market research and design teams."</p>
+        <p class="paragraph" font-style: italic;>"David is driven and hard working. He's a big picture problem solver who has jumped right into applying his UX skills to whatever challenges he's presented with. David also brings an extensive background in teaching which he uses to help keep teams on track and moving forward."</p>
 
       </div>
       <div class="carousel-item">
-        <h2>Testimonials</h2>
         <h4>Badri Sree, Senior UX Designer at Evernote says:</h4>
-        <p class="paragraph" font-style: italic;>"David was an integral part of refining our platform during our pre- and early stage launch. He worked seamlessly across channels, and improved communication between our market research and design teams."</p>
+        <p class="paragraph" font-style: italic;>"David is one of those rare talents that you meet every so often. He's always looking ahead and uses his extensive knowledge of the world to bring value to teams and organizations."</p>
 
       </div>
     </div>
+<!--
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
@@ -245,6 +243,12 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
+    -->
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">O</li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1">OO</li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2">OOO</li>
+    </ol>
   </div>
 </div>
 </div>
@@ -335,7 +339,7 @@
             <h3 class="space-none">Thanks for stopping by!</h3>
             <p class="paragraph">Want to know more? Feel free to get in touch.</p>
           </div>
-          <div class="col-one-third middle">
+          <div class="col-one-third middle" id="contact-section">
             <a href="signup.html" class="button button-primary" role="button">Get In Touch</a>
           </div>
         </form>
