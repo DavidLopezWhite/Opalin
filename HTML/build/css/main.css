@@ -461,7 +461,8 @@ p:last-child {
 .lead {
   font-size: 1.5rem;
   font-weight: 400;
-  line-height: 2rem;
+  line-height: 1rem;
+  padding-bottom: 24px;
 }
 
 @media only screen and (max-width: 479px) {
@@ -480,6 +481,11 @@ p:last-child {
 
 .paragraph.serif {
   font-family: "PT Serif", Georgia, serif;
+}
+
+.paragraph.serif-bold {
+  font-family: "PT Serif", Georgia, serif;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 479px) {
@@ -1450,6 +1456,7 @@ p:last-child {
 
 .space-top {
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* Remove spacing */
@@ -2662,6 +2669,12 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
   width: 100px;
 }
 */
+.carousel {
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column; */
+   
+}
 .carousel-indicators {
   position: relative;
   right: auto;
@@ -2682,8 +2695,15 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
   height: 16px;
   width: 16px;
   border-radius: 25px;
+  margin: 48px;
 }
 
 .carousel-indicators > li.active {
   background-color: #C0C0C0;
+}
+.carousel-item {
+  align-self: flex-end;
+}
+.carousel-inner {
+  height: 150px;
 }
