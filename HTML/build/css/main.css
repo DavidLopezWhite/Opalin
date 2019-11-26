@@ -461,17 +461,17 @@ p:last-child {
 .lead {
   font-size: 1.5rem;
   font-weight: 400;
-  line-height: 1rem;
+  line-height: 2rem;
   padding-bottom: 24px;
 }
-
+/*
 @media only screen and (max-width: 479px) {
   .lead {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 }
-
+*/
 .paragraph {
   font-size: 1.25rem;
   font-weight: 400;
@@ -483,9 +483,10 @@ p:last-child {
   font-family: "PT Serif", Georgia, serif;
 }
 
-.paragraph.serif-bold {
-  font-family: "PT Serif", Georgia, serif;
+.paragraph.bold {
+  font-size: 1.5rem;
   font-weight: bold;
+  line-height: 1rem;
 }
 
 @media only screen and (max-width: 479px) {
@@ -1773,16 +1774,16 @@ p:last-child {
 }
 
 .footer-main .copyright {
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1rem;
-  opacity: 0.4;
+  
   padding-bottom: 3rem;
   text-align: center;
 }
 
 .footer-main .copyright a {
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1rem;
   opacity: 1;
