@@ -424,6 +424,10 @@ h3 {
   line-height: 2.75rem;
 }
 
+#h3-footer {
+  font-weight:400;
+}
+
 @media only screen and (max-width: 479px) {
   h3 {
     font-size: 1.75rem;
@@ -458,6 +462,9 @@ p:last-child {
   margin: 0;
 }
 
+#p-top {
+  padding-top: 96px;
+}
 .lead {
   font-size: 1.5rem;
   font-weight: 400;
@@ -1342,6 +1349,7 @@ p:last-child {
 
 ----------------------------------------------------------------------------- */
 .padding {
+  display: grid;
   padding: 5rem;
 }
 
@@ -1399,6 +1407,10 @@ p:last-child {
 /* Add spacing above or below content */
 .margin-bottom {
   margin-bottom: 5rem;
+}
+
+.margin-bottom-footer {
+  margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -1777,7 +1789,7 @@ p:last-child {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1rem;
-  
+
   padding-bottom: 3rem;
   text-align: center;
 }
@@ -2660,12 +2672,12 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
 /* For the bottom icons/indicators*/
 
 /*.carousel-indicators {
- 
-    
+
+
   right: auto;
   left: auto;
   bottom: auto;
-  
+
   height: 50px;
   width: 100px;
 }
@@ -2674,7 +2686,7 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
   /* display: flex;
   justify-content: center;
   flex-direction: column; */
-   
+
 }
 .carousel-indicators {
   position: relative;
@@ -2706,5 +2718,17 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
   align-self: flex-end;
 }
 .carousel-inner {
-  height: 150px;
+  height: 175px;
+}
+#testimonials {
+  padding-top: 248px;
+}
+#about-section {
+  padding-top: 96px;
+}
+#work-section  {
+  padding-top: 96px;
+}
+#contact-section  {
+  padding-top: 36px;
 }
