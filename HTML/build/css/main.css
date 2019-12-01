@@ -2722,7 +2722,11 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
   height: 175px;
 }
 #testimonials {
-  padding-top: 248px;
+  /* padding-top: 248px; */
+}
+#testimonials-anchor {
+  position: relative;
+  top: -200px;
 }
 #about-section {
   padding-top: 96px;
@@ -2732,4 +2736,7 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
 }
 #contact-section  {
   padding-top: 36px;
+}
+main {
+  position: relative;
 }

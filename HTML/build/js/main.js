@@ -43,6 +43,20 @@ document.querySelectorAll('#navbar a').forEach(function(el){
   });
 });
 
+// add remove class to active (hides hamburger menu) and no-scroll tags (to allow scrolling) after selecting a nav item 
+
+document.querySelectorAll('#navbar a').forEach(function(el){
+  el.addEventListener('click', function() {
+    Array.from(document.getElementsByTagName('body')).forEach(function(el) {
+      el.classList.remove('no-scroll');
+    });
+    Array.from(document.getElementsByClassName('header-main')).forEach(function(el) {
+      el.classList.remove('active');
+    });
+    return true;
+  });
+});
+
 // Prevent background from scrolling on mobile when navigation is toggled
 
 document.addEventListener('touchmove', function(evt) {
