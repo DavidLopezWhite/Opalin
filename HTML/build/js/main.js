@@ -21,24 +21,27 @@ document.addEventListener('scroll', function() {
 
 // Add class when mobile navigation icon is clicked
 
-function toggleMenu() {
-  Array.from(document.getElementsByTagName('body')).forEach(function(el) {
-    el.classList.toggle('no-scroll');
-  });
-  Array.from(document.getElementsByClassName('header-main')).forEach(function(el) {
-    el.classList.toggle('active');
-  });
-}
-
 Array.from(document.getElementsByClassName('nav-toggle')).forEach(function(el) {
   el.addEventListener('click', function() {
-    toggleMenu();
+    Array.from(document.getElementsByTagName('body')).forEach(function(el) {
+      el.classList.toggle('no-scroll');
+    });
+    Array.from(document.getElementsByClassName('header-main')).forEach(function(el) {
+      el.classList.toggle('active');
+    });
   });
 });
 
+// add remove class to active (hides hamburger menu) and no-scroll tags (to allow scrolling) after selecting a nav item 
+
 document.querySelectorAll('#navbar a').forEach(function(el){
   el.addEventListener('click', function() {
-    toggleMenu();
+    Array.from(document.getElementsByTagName('body')).forEach(function(el) {
+      el.classList.remove('no-scroll');
+    });
+    Array.from(document.getElementsByClassName('header-main')).forEach(function(el) {
+      el.classList.remove('active');
+    });
     return true;
   });
 });
