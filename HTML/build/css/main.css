@@ -539,6 +539,7 @@ p:last-child {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 100%;
+  margin-left: 0;
 }
 
 .row .col-one-half {
