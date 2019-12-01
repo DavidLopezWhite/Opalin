@@ -21,14 +21,25 @@ document.addEventListener('scroll', function() {
 
 // Add class when mobile navigation icon is clicked
 
+function toggleMenu() {
+  Array.from(document.getElementsByTagName('body')).forEach(function(el) {
+    el.classList.toggle('no-scroll');
+  });
+  Array.from(document.getElementsByClassName('header-main')).forEach(function(el) {
+    el.classList.toggle('active');
+  });
+}
+
 Array.from(document.getElementsByClassName('nav-toggle')).forEach(function(el) {
   el.addEventListener('click', function() {
-    Array.from(document.getElementsByTagName('body')).forEach(function(el) {
-      el.classList.toggle('no-scroll');
-    });
-    Array.from(document.getElementsByClassName('header-main')).forEach(function(el) {
-      el.classList.toggle('active');
-    });
+    toggleMenu();
+  });
+});
+
+document.querySelectorAll('#navbar a').forEach(function(el){
+  el.addEventListener('click', function() {
+    toggleMenu();
+    return true;
   });
 });
 
