@@ -2699,13 +2699,14 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
   right: auto;
   bottom: auto;
   left: auto;
-  z-index: 15;
+  /* z-index: 1; */
   display: flex;
   justify-content: center;
   padding-left: 0;
   margin-right: 15%;
   margin-left: 15%;
   list-style: none;
+/*  max-height: 36px; */
 }
 .carousel-indicators > li {
   /* direct descendant is a faster way */
@@ -2713,8 +2714,8 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
   background-color: #110F24;
   height: 16px;
   width: 16px;
-  border-radius: 25px;
-  margin: 48px;
+  border-radius: 50px;
+  margin: 24px;
 }
 
 .carousel-indicators > li.active {
@@ -2725,6 +2726,16 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
 }
 .carousel-inner {
   height: 175px;
+}
+@media only screen and (max-width: 766px) {
+  .carousel-inner {
+    height: 260px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .carousel-inner {
+    height: 272px;
+  }
 }
 #testimonials {
   /* padding-top: 248px; */
