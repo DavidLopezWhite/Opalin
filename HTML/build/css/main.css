@@ -1752,6 +1752,7 @@ p:last-child {
 
 .card-content {
   padding: 2rem;
+  margin-top: 48px;
 }
 
 @media only screen and (max-width: 479px) {
@@ -1765,6 +1766,10 @@ p:last-child {
 # Components - Footer
 
 ----------------------------------------------------------------------------- */
+.footer-main {
+  background-color: #575bde;
+}
+
 .footer-main a:not(.button) {
   font-size: 0.875rem;
   font-weight: 400;
@@ -2722,7 +2727,11 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
   height: 175px;
 }
 #testimonials {
-  padding-top: 248px;
+  /* padding-top: 248px; */
+}
+#testimonials-anchor {
+  position: relative;
+  top: -200px;
 }
 #about-section {
   padding-top: 96px;
@@ -2732,4 +2741,7 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
 }
 #contact-section  {
   padding-top: 36px;
+}
+main {
+  position: relative;
 }
