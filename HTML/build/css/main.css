@@ -2399,6 +2399,7 @@ ul.blank {
 ol.inline,
 ul.inline {
   padding-left: 0;
+  padding-top: 48px;
 }
 
 ol.inline li,
