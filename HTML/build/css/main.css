@@ -2401,12 +2401,14 @@ ul.inline {
   padding-left: 0;
 }
 
-ol.inline.right,
-ul.inline.right {
-  padding-left: 0;
-  padding-top: 48px;
-}
+@media only screen and (max-width: 770px) {
 
+  ol.inline.right,
+  ul.inline.right {
+    padding-left: 0;
+    padding-top: 48px;
+  }
+}
 ol.inline li,
 ul.inline li {
   display: inline-block;
