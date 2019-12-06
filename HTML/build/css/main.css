@@ -1335,9 +1335,9 @@ p:last-child {
 }
 
 .shadow-l {
-  -webkit-box-shadow: 0 32px 40px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 32px 40px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 32px 40px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 16px 32px 40px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 32px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 32px 40px rgba(0, 0, 0, 0.15);
 }
 
 .shadow-none {
@@ -1365,6 +1365,23 @@ p:last-child {
 @media only screen and (max-width: 767px) {
   .padding {
     padding: 3rem 1rem;
+  }
+}
+
+.padding-side {
+  display: grid;
+  padding: 1rem 5rem;
+}
+
+@media only screen and (max-width: 1023px) {
+  .padding-side {
+    padding: 1rem 3rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .padding-side {
+    padding: 2rem 1rem;
   }
 }
 
@@ -1484,7 +1501,13 @@ p:last-child {
 /*  margin: 0; */
   text-align: center;
 }
-
+@media only screen and (max-width: 767px) {
+.space-none {
+/*  margin: 0; */
+  text-align: center;
+  font-weight: normal;
+  }
+}
 .space-bottom-none {
   margin-bottom: 0;
 }
@@ -2201,7 +2224,7 @@ form .form-help {
 }
 
 .header-main ul.inline li {
-  margin-bottom: 0;
+  margin-bottom: 0rem;
   padding-right: 2rem;
 }
 
@@ -2459,7 +2482,7 @@ ul.inline li:last-child {
 
 .logo img,
 .logo svg {
-  height: 2rem;
+  height: 2.5rem;
   margin: 0.25rem;
 }
 
@@ -2467,7 +2490,7 @@ ul.inline li:last-child {
   color: #fff;
 }
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
   .logo {
     -webkit-transition: none !important;
     -moz-transition: none !important;
@@ -2476,7 +2499,7 @@ ul.inline li:last-child {
     transition: none !important;
   }
 }
-
+*/
 /* -----------------------------------------------------------------------------
 
 # Components - Pricing
@@ -2770,4 +2793,7 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
 }
 main {
   position: relative;
+}
+.border {
+  border: 1px black;
 }
