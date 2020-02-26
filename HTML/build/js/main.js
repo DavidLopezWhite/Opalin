@@ -43,7 +43,7 @@ document.querySelectorAll('#navbar a').forEach(function(el){
   });
 });
 
-// add remove class to active (hides hamburger menu) and no-scroll tags (to allow scrolling) after selecting a nav item 
+// add remove class to active (hides hamburger menu) and no-scroll tags (to allow scrolling) after selecting a nav item
 
 document.querySelectorAll('#navbar a').forEach(function(el){
   el.addEventListener('click', function() {
@@ -64,6 +64,7 @@ document.addEventListener('touchmove', function(evt) {
 });
 
 // Navbar padding and size scale //
+/*
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -77,6 +78,6 @@ function scrollFunction() {
 //    document.getElementById("logo").style.fontSize = "35px";
   }
 }
-
+*/
 // Bootstrap Carousel
 $('.carousel').carousel()
