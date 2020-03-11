@@ -488,6 +488,13 @@ p:last-child {
   line-height: 2rem;
 }
 
+.paragraph-head {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1rem;
+  padding-bottom: 2rem; 
+}
+
 .paragraph.serif {
   font-family: "PT Serif", Georgia, serif;
 }
@@ -842,6 +849,12 @@ p:last-child {
   justify-content: center;
 }
 
+.img-space {
+  margin: 1.5em 0em;
+}
+.top-paragraph {
+  margin: 2rem 0rem;
+}
 @media only screen and (max-width: 1023px) {
   .center-desktop {
     text-align: center;
@@ -2877,4 +2890,3 @@ main {
   .button:hover {
     background-color: #4B0082
   }
-  
