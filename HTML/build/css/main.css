@@ -1401,10 +1401,25 @@ p:last-child {
     padding: 3rem 1rem;
   }
 }
+.padding-footer {
+  display: grid;
+  padding: 5rem;
+}
 
+@media only screen and (max-width: 1023px) {
+  .padding {
+    padding: 3rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .padding {
+    padding: 3rem 1rem;
+  }
+}
 .padding-side {
   display: grid;
-  padding: 1rem 5rem;
+  padding: 5rem 5rem;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -2911,14 +2926,24 @@ main {
   .button:hover {
     background-color: #4B0082;
   }
-.label-phase {
-    background-color: #0099cc;
+h3.label-phase {
+    background-color: #1d1a3d;
     padding: 1.5em;
+    color: #fff;
+}
+/* not needed? */
+h3 #label-phase {
+    font-color: #fff;
+}
+/*    */
+.project-snapshot {
+    display: grid;
+    padding: 5rem 5rem;
+    padding-top: 5rem
 }
 .project-overview {
     display: grid;
-    background-color: #0099cc;
-/*    margin: 1rem 5rem;  */
+    background-color: #1d1a3d;
     font-color: #fff;
-    /*padding: 1.5em;*/
+    margin: 5rem 0rem;
 }
