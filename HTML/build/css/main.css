@@ -254,7 +254,21 @@ img {
   max-width: 100%;
   vertical-align: bottom;
 }
-
+img.slide-basic {
+  display: flex;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+/*  justify-content: center; */
+/*  .shadow-l */
+/*
+  -webkit-box-shadow: 16px 32px 40px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 32px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 32px 40px rgba(0, 0, 0, 0.15);
+  */
+}
 section {
   overflow: hidden;
 }
@@ -442,6 +456,7 @@ h3 .project-overview {
 #p-project-overview {
   color: #fff;
   font-size: 1rem;
+  text-align: left;
 }
 
 #h4-project-overview {
@@ -936,11 +951,11 @@ p:last-child {
 
 .bg-gradient-primary {
   background: #575bde;
-  background: -webkit-linear-gradient(140deg, #00d7af 25%, #575bde 100%);
-  background: -moz-linear-gradient(140deg, #00d7af 25%, #575bde 100%);
-  background: -ms-linear-gradient(140deg, #00d7af 25%, #575bde 100%);
-  background: -o-linear-gradient(140deg, #00d7af 25%, #575bde 100%);
-  background: linear-gradient(140deg, #00d7af 25%, #575bde 100%);
+  background: -webkit-linear-gradient(140deg, #5383F5 25%, #575bde 100%);
+  background: -moz-linear-gradient(140deg, #5383F5 25%, #575bde 100%);
+  background: -ms-linear-gradient(140deg, #5383F5 25%, #575bde 100%);
+  background: -o-linear-gradient(140deg, #5383F5 25%, #575bde 100%);
+  background: linear-gradient(140deg, #5383F5 25%, #575bde 100%);
 }
 
 .bg-gradient-blue {
