@@ -1,1 +1,16 @@
-<svg width="1441" height="901" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path fill="none" d="M.181.261h1440v900H.181z"/><path d="M1440.18 900.261H.18v-690s69.299 2.999 120 10c415.101 57.321 554.157 301.075 860 460 225.762 117.313 460 140 460 140v80z" fill="url(#_Linear1)"/><defs><linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="rotate(78.195 158.614 459.528) scale(704.908)"><stop offset="0" stop-color="#00d7af"/><stop offset="1" stop-color="#575bde"/></linearGradient></defs></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1441 901" style="enable-background:new 0 0 1441 901;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);}
+</style>
+<path class="st0" d="M0.2,0.3h1440v900H0.2V0.3z"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-238.8071" y1="991.3176" x2="-237.8071" y2="991.3176" gradientTransform="matrix(144.2111 689.9989 689.9989 -144.2111 -648985.5 307944.2188)">
+	<stop  offset="0" style="stop-color:#55A7FF"/>
+	<stop  offset="1" style="stop-color:#575BDE"/>
+</linearGradient>
+<path class="st1" d="M1440.2,900.3H0.2v-690c0,0,69.3,3,120,10c415.1,57.3,554.2,301.1,860,460c225.8,117.3,460,140,460,140
+	L1440.2,900.3L1440.2,900.3z"/>
+</svg>

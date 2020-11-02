@@ -1,15 +1,3 @@
-/*!
- *
- *   Template Name: Opalin HTML Template
- *   Template URI: https://uiuxassets.com/assets/opalin-html-template/
- *   Author: UI/UX Assets <hello@uiuxassets.com>
- *   Author URI: https://uiuxassets.com/
- *   Version: v1.0.0
- *   License: GNU General Public License, Version 2
- *   License URI: http://www.gnu.org/licenses/gpl-2.0.html
- *   Copyright (C) 2018 UI/UX Assets
- *
-*/
 /* -----------------------------------------------------------------------------
 
 Table Of Contents
@@ -2819,7 +2807,11 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
   border-radius: 50px;
   margin: 24px;
 }
-
+@media only screen and (max-width: 640px) {
+  .carousel-indicators {
+    padding-top: 64px;
+  }
+}
 .carousel-indicators > li.active {
   background-color: #C0C0C0;
 }
