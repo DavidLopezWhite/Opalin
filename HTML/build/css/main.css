@@ -530,6 +530,7 @@ p:last-child {
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1rem;
+  text-align: center;
 }
 
 @media only screen and (max-width: 479px) {
@@ -913,6 +914,9 @@ p:last-child {
 
 .bg-light {
   background: #f6f6f9;
+}
+.bg-light-grey {
+  background: ;
 }
 .bg-light-indigo {
   background: #313fae;
@@ -1399,6 +1403,16 @@ p:last-child {
   display: grid;
   padding: 5rem;
 }
+.padding-about {
+  display: grid;
+  padding: 3rem;
+}
+
+.padding-about-paragraph {
+  display: grid;
+  padding: 5rem;
+  padding-top: 0;
+}
 
 @media only screen and (max-width: 1023px) {
   .padding {
@@ -1778,7 +1792,7 @@ p,h3,h4.space-top {
 .button.button-close:before {
   direction: ltr;
   display: inline-block;
-  font-family: "Material Icons";
+  font-family: "Material";
   font-feature-settings: "liga";
   font-size: 1.5rem;
   font-style: normal;
@@ -2820,11 +2834,12 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
   /* z-index: 1; */
   display: flex;
   justify-content: center;
-  margin-top: 32px;
+  margin-top: 2.5rem;
   padding-left: 0;
   margin-right: 15%;
   margin-left: 15%;
   list-style: none;
+
 /*  max-height: 36px; */
 }
 .carousel-indicators > li {
@@ -2849,7 +2864,7 @@ span.carousel-control-prev-icon, span.carousel-control-next-icon {
   align-self: flex-end;
 }
 .carousel-inner {
-  height: 175px;
+  height: 225px;
 }
 @media only screen and (max-width: 766px) {
   .carousel-inner {
