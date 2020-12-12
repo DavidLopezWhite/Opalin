@@ -427,6 +427,7 @@ h3 {
 }
 
 #h3-work {
+  padding-top: 1.5rem;
   font-size: 2rem;
   font-weight: 600;
 }
@@ -1540,6 +1541,11 @@ p:last-child {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .-margin-bottom {
+    margin-bottom: 2rem;
+  }
+}
 .-margin-bottom-2 {
   margin-bottom: -10rem;
 }
