@@ -286,9 +286,7 @@ section {
   text-decoration: none;
 
 }
-.nav-mobile {
 
-}
 /* Page content */
 .content {
   padding: 16px;
@@ -2515,17 +2513,9 @@ form .form-help {
   .header-main.active .button-secondary:hover {
     background: rgba(255, 255, 255, 0.1);
   }
-  /* .header-main.active ul.inline.navtitle {
+  .header-main.active ul.inline.navtitle {
     margin-bottom: 2em;
     margin-top: 5em;
-  } */
-  .header-main ul.inline.navtitle {
-    display: block;
-  }
-  .header-main ul.inline.navtitle > a {
-    margin-top: -2em;
-    margin-left: -1.2em;
-    font-size: 1.2em;
   }
 }
 
