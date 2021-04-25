@@ -282,7 +282,7 @@ section {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px;
+  padding-top: 14px;
   text-decoration: none;
 
 }
@@ -424,6 +424,10 @@ padding-top: 3rem;
     line-height: 3.25rem;
   }
 }
+h2.hero-dark {
+  padding-top: 3rem;
+  color: #fff;
+  }
 
 h3 {
   font-size: 2rem;
@@ -506,8 +510,21 @@ p:last-child {
   line-height: 2rem;
   padding-bottom: 24px;
 }
-.padding-top-project-overview {
+.lead-dark {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
+  padding-bottom: 24px;
+  color: #fff;
+}
+.padding-top-1rem {
   padding-top: 1rem;
+}
+.padding-top-2rem {
+  padding-top: 2rem;
+}
+.padding-top-3rem {
+  padding-top: 3rem;
 }
 /*
 @media only screen and (max-width: 479px) {
@@ -518,6 +535,18 @@ p:last-child {
 }
 */
 .paragraph {
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 2rem;
+}
+.paragraph-slide-1-2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 2rem;
+}
+a.contact {
   font-size: 1.25rem;
   font-weight: 400;
   letter-spacing: 0.3px;
@@ -924,11 +953,19 @@ p:last-child {
   background: linear-gradient(#5A4FBD, #110f24);
   color: #fff;
 }
+.bg-dark-2-gradient-dk-lt {
+  background: linear-gradient(#110f24, #5A4FBD);
+  color: #fff;
+}
+.bg-dark-2-gradient-lt {
+  background: linear-gradient(#231d52, #5A4FBD);
+  color: #fff;
+}
 .bg-light {
   background: #e0e0e0;
 }
 .bg-light-grey {
-  background: ;
+  background: #EFEFEF;
 }
 .bg-light-indigo {
   background: #313fae;
@@ -1232,7 +1269,9 @@ p:last-child {
 .overlay-hero:before {
   background: url(../media/bg/shape-hero.svg);
 }
-
+.center-vertical {
+  vertical-align: middle;
+}
 /* -----------------------------------------------------------------------------
 
 # Tools - Divider
@@ -1414,6 +1453,10 @@ p:last-child {
 .padding {
   padding: 5rem;
 }
+.padding-footer {
+  padding: 5 5 1 5rem;
+
+}
 .padding-about {
   padding: 3rem;
 }
@@ -1452,8 +1495,8 @@ p:last-child {
   }
 }
 .padding-side {
-  display: grid;
-  padding: 5rem 5rem;
+  display: flex;
+  padding: 1rem 5rem 1rem 5rem;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -1519,7 +1562,9 @@ p:last-child {
 .margin-bottom-thanks {
   margin-bottom: 0rem;
 }
-
+.thanks {
+  padding-top: 1.75rem;
+}
 @media only screen and (max-width: 1023px) {
   .margin-bottom {
     margin-bottom: 3rem;
@@ -1534,6 +1579,10 @@ p:last-child {
   .margin-top {
     margin-top: 3rem;
   }
+}
+.margin-top-footer {
+  margin-top: 2rem;
+  padding-bottom: 1rem;
 }
 .margin-bottom {
   margin-bottom: 5rem;
@@ -1923,7 +1972,7 @@ p,h3,h4.space-top {
 }
 
 .footer-main a:not(.button) {
-  font-size: 0.875rem;
+  font-size: 1.25rem;
   font-weight: 400;
   line-height: 1rem;
   color: #575bde;
@@ -1951,7 +2000,7 @@ p,h3,h4.space-top {
 }
 
 .footer-main .copyright a {
-  margin-top: 1.5rem;
+  /* margin-top: 1.5rem; */
   font-size: 1rem;
   font-weight: 400;
   line-height: 1rem;
@@ -1978,7 +2027,10 @@ p,h3,h4.space-top {
     line-height: 1rem;
   }
 }
-
+.footer-copyright {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
 /* -----------------------------------------------------------------------------
 
 # Components - Forms
@@ -2290,15 +2342,24 @@ form .form-help {
 }
 */
 #navbar.navbarScroll {
-  padding: 0px 24px 24px 24px;
+  padding: 0 24px 24px 24px;
   transition: all 0.35s ease-out;
 }
 
 #navbar.navbarTop {
-  padding: 0px 24px 24px 24px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 2rem;
   transition: all 0.35s ease-in;
 }
-
+@media only screen and (max-width: 1024px) {
+#navbar.navbarTop {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+  transition: all 0.35s ease-in;
+}
+}
 .no-scroll {
   overflow: hidden;
 }
@@ -2317,8 +2378,7 @@ form .form-help {
 .header-main nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 1rem;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -2556,7 +2616,35 @@ form .form-help {
 .preload .feature-icons {
   font-size: 0;
 }
-
+.contact-icons {
+  color: #fff;
+  font-size: 4rem;
+  height: 4rem;
+  width: 4rem;
+  line-height: 6rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* copied out to prep for tweaking footer contact later */
+@media only screen and (max-width: 1024px) {
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  }
+}
+.contact-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* -----------------------------------------------------------------------------
 
 # Components - List
@@ -2646,6 +2734,9 @@ ul.inline li:last-child {
     -o-transition: none !important;
     transition: none !important;
     display: block;
+    padding-left: 3rem;
+    font-size: 2.5rem;
+    font-weight: 900;
   }
 }
 
