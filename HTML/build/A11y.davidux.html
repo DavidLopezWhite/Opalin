@@ -67,7 +67,7 @@ gtag('config', 'UA-96983322-1');
         </div>
       </div>
       <div class="col-one-half middle">
-        <img class="rounded shadow-l" src="media/A11Y best practices for Login.png" srcset="media/apl nexted/color-dots 1 1x, media/apl nexted/color-dots 1@2x.png 2x" alt="accessibility login project featured image">
+        <img class="rounded shadow-l" src="media/content/A11Y best practices for Login.png" srcset="media/content/A11Y best practices for Login 1x, media/content/A11Y best practices for Login@2x.png 2x" alt="accessibility login project featured image">
       </div>
     </div>
   </div>
@@ -96,29 +96,29 @@ gtag('config', 'UA-96983322-1');
 </div>
 <div class="row max-width-m">
   <p class="testimonials-title" id="">What makes a login screen accessible?</p>
-  <p class="paragraph" id=""></br>Many of us log into websites and applications multiple times per day, and it's easy to take for granted what's under the hood. As I researched best practices for creating a11y-friendly login screens, I came up with a list that I adhered to when creating the login screen below.</p>
+  <p class="paragraph" id=""></br>Many of us log into websites and applications multiple times per day, and it's easy to take for granted what's under the hood. As I researched best practices for creating <a href="https://www.a11yproject.com/" rel="noopener" target="_blank">a11y-friendly</a> login screens, I came up with a list that I adhered to when creating the login screen below.</p>
 </br>
   <p class="paragraph">Here's the list:</p>
 </br>
   <div class="row max-width-m">
-    <ul>
-      <li>Create focus on text input fields</li>
-      <li>Use a label element for each form control</li>
-      <li>Add "For" attributes and make sure to match their corresponding id value</li>
-      <li>Use aria-required=true, to let screen readers communicate required steps</li>
-      <li>Use a <a href="https://contrast-grid.eightshapes.com/" rel="noopener" target="_blank">color contrast checker</a>, to make ensure readability and meet WCAG 2.0 standards</li>
+    <ul class="paragraph">
+      <li>Create focus on <a href="https://www.w3.org/WAI/tutorials/forms/instructions/" rel="noopener" target="_blank">text input fields</a></li>
+      <li>Use a <a href="https://www.w3schools.com/tags/tag_label.asp" rel="noopener" target="_blank">label element</a> for each form control</li>
+      <li>Add <a href="https://www.w3.org/WAI/tutorials/forms/labels/" rel="noopener" target="_blank">"For" attributes</a> and make sure to match their corresponding id value</li>
+      <li>Use <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-required_attribute" rel="noopener" target="_blank">aria-required=true</a>, to let screen readers communicate required steps</li>
+      <li>Use a <a href="https://contrast-grid.eightshapes.com/" rel="noopener" target="_blank">color contrast checker</a>, to make ensure readability and meet <a href="https://www.w3.org/WAI/standards-guidelines/" rel="noopener" target="_blank">WCAG standards</a></li>
     </ul>
   </div>
 </div>
-<div class="row max-width-m">
-    <p class="paragraph" id="">Here's the login screen, try it out yourself!</p>
+<div class="row max-width-m padding-top-3rem">
+    <p class="testimonials-title" id="">Here's the login screen, try it out yourself!</p>
     <br>
-  <div class="row max-width-m">
+  <!-- <div class="row max-width-m">
     <p class="paragraph">Username = davidux</br></p>
   <div class="row max-width-m">  
     <p class="paragraph">Password = @ccessibil1tY</p>
-    </br>
-  </div>
+    </br> 
+  </div> -->
   </div>
 </div>
 </section>
@@ -129,12 +129,12 @@ gtag('config', 'UA-96983322-1');
          <label for="username">Username: (required)
          </label>
        <br>
-         <input type="text" id="username" class="input" required title="Please enter a username" aria-required="true"/>
+         <input type="text" id="username" class="input" required title="Please enter a username" aria-required="true" placeholder="davidux"/>
        <br>
          <label for="password">Password:
          </label>
-       <br>
-         <input type="password" id="password" class="input" pattern="^(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[0-9]).*$" required title="Password must contain at least one upper and one lower case letter, and at least one number" aria-required="true"/>
+       <br> 
+         <input type="password" id="password" class="input" pattern="^(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[0-9]).*$" required title="Password must contain at least one upper and one lower case letter, and at least one number" aria-required="true" placeholder="@ccessibil1tY"/>
        <br>
       </div>
       <div class="submit-button">
