@@ -453,7 +453,10 @@ h3 .project-overview {
 }
 
 #h3-project-overview {
-    color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.75rem;
+  color: #fff;
 }
 
 #p-project-overview {
@@ -2082,303 +2085,7 @@ p,h3,h4.space-top {
 }
 /* -----------------------------------------------------------------------------
 
-# Components - Forms
-
------------------------------------------------------------------------------ */
-form {
-  /* Checkboxes and radio buttons */
-  /* Switch */
-}
-
-form label {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-  font-weight: 700;
-  line-height: 2.5rem;
-}
-
-form input[type="email"],
-form input[type="password"],
-form input[type="text"],
-form select,
-form textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-  -webkit-border-radius: 0.1875rem;
-  -moz-border-radius: 0.1875rem;
-  border-radius: 0.1875rem;
-  background: #f6f6f9;
-  border: 1px solid #ececee;
-  color: #110f24;
-  padding: 0.5rem 0.75rem;
-  width: 100%;
-}
-
-form input[type="email"]:focus,
-form input[type="password"]:focus,
-form input[type="text"]:focus,
-form select:focus,
-form textarea:focus {
-  border: 1px solid #ccced0;
-  outline: none;
-}
-
-form input[type="email"],
-form input[type="password"],
-form input[type="text"],
-form select,
-form .select-wrapper {
-  height: 2.5rem;
-}
-
-form .select-wrapper {
-  position: relative;
-}
-
-form .select-wrapper:before {
-  direction: ltr;
-  display: inline-block;
-  font-family: "Material Icons";
-  font-feature-settings: "liga";
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: normal;
-  line-height: 1;
-  text-rendering: optimizeLegibility;
-  text-transform: none;
-  white-space: nowrap;
-  word-wrap: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #110f24;
-  content: "keyboard_arrow_down";
-  height: 2.5rem;
-  line-height: 2.5rem;
-  pointer-events: none;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  top: 0;
-  width: 2.5rem;
-}
-
-form .select-wrapper select {
-  cursor: pointer;
-}
-
-form .select-wrapper select::-ms-expand {
-  display: none;
-}
-
-form textarea {
-  min-height: 10rem;
-}
-
-form input[type="checkbox"],
-form input[type="radio"] {
-  display: none;
-}
-
-form input[type="checkbox"]:checked + label.checkbox:before,
-form input[type="checkbox"]:checked + label.radio:before,
-form input[type="radio"]:checked + label.checkbox:before,
-form input[type="radio"]:checked + label.radio:before {
-  background: #575bde;
-}
-
-form input[type="checkbox"]:checked + label.checkbox:after,
-form input[type="checkbox"]:checked + label.radio:after,
-form input[type="radio"]:checked + label.checkbox:after,
-form input[type="radio"]:checked + label.radio:after {
-  color: #fff;
-}
-
-form label.checkbox,
-form label.radio {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5rem;
-  cursor: pointer;
-  display: block;
-  line-height: 2.5rem;
-  padding-left: 2rem;
-  position: relative;
-  width: fit-content;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-form label.checkbox:before,
-form label.radio:before {
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-  background: #ececee;
-  content: "";
-  height: 1.5rem;
-  left: 0;
-  position: absolute;
-  top: 0.5rem;
-  width: 1.5rem;
-}
-
-.dark form label.checkbox:before, .dark
-form label.radio:before {
-  background: #fff;
-}
-
-form label.checkbox:after,
-form label.radio:after {
-  direction: ltr;
-  display: inline-block;
-  font-family: "Material Icons";
-  font-feature-settings: "liga";
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: normal;
-  line-height: 1;
-  text-rendering: optimizeLegibility;
-  text-transform: none;
-  white-space: nowrap;
-  word-wrap: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-  color: transparent;
-  content: "check";
-  font-size: 1.25rem;
-  height: 1.5rem;
-  left: 0;
-  line-height: 1.5rem;
-  pointer-events: none;
-  position: absolute;
-  text-align: center;
-  top: 0.5rem;
-  width: 1.5rem;
-}
-
-form label.checkbox:last-child,
-form label.radio:last-child {
-  margin-bottom: 0;
-}
-
-form label.checkbox:before {
-  -webkit-border-radius: 0.1875rem;
-  -moz-border-radius: 0.1875rem;
-  border-radius: 0.1875rem;
-}
-
-form label.radio:before {
-  -webkit-border-radius: 0.75rem;
-  -moz-border-radius: 0.75rem;
-  border-radius: 0.75rem;
-}
-
-form input.switch {
-  display: none;
-}
-
-form input.switch:checked + label.switch:before {
-  background: #575bde;
-}
-
-form input.switch:checked + label.switch:after {
-  left: 26px;
-}
-
-form label.switch {
-  cursor: pointer;
-  display: block;
-  height: 32px;
-  width: fit-content;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-form label.switch:before {
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
-  border-radius: 16px;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-  background: #ececee;
-  content: "";
-  display: block;
-  height: 32px;
-  width: 56px;
-}
-
-.dark form label.switch:before {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-form label.switch:after {
-  -webkit-border-radius: 14px;
-  -moz-border-radius: 14px;
-  border-radius: 14px;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-  background: #fff;
-  content: "";
-  display: block;
-  height: 28px;
-  left: 2px;
-  position: relative;
-  top: -30px;
-  width: 28px;
-}
-
-form .form-group {
-  margin-bottom: 1rem;
-  position: relative;
-}
-
-form .form-help {
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1rem;
-  color: #110f24;
-  opacity: 0.4;
-}
-
-@media only screen and (max-width: 767px) {
-  form .row.unequal [class^="col-"].unequal {
-    margin: 0;
-  }
-}
-
-@media only screen and (max-width: 479px) {
-  form input[type="email"],
-  form input[type="password"],
-  form input[type="text"],
-  form select,
-  form .select-wrapper {
-    height: 3rem;
-  }
-  form .select-wrapper:before {
-    height: 3rem;
-    line-height: 3rem;
-    width: 3rem;
-  }
-}
-
+# Components - Forms (deleted)
 /* -----------------------------------------------------------------------------
 
 # Components - Header
@@ -3187,7 +2894,7 @@ main {
   }
   */
   .login-button {
-    background-color: #008080;
+    background-color: #145C5C;
     border: none;
     border-radius: 8px;
     color: white;
@@ -3213,31 +2920,20 @@ main {
     margin: 10px 0px;
     padding: 6px;
     font-size: 16px;
-    border: 1px solid black;
+    border: 1px solid rgb(21, 21, 21);
     border-radius: 4px;
     width: 100%;
   }
   input:focus {
-    outline: 1px;
-    border-width: 1px;
+    outline: 2px;
+    border-width: 2px;
     border-color: #0000FF;
     box-shadow: 1px 1px 5px grey;
   }
   .button:hover {
     background-color: #4B0082;
   }
-h3.label-phase {
-    font-size: 1.5rem;
-    font-weight: bold;
-    background-color: #1d1a3d;
-    padding: .5em;
-    color: #fff;
-}
-/* not needed? */
-/* h3 #label-phase {
-    font-color: #fff;
-}
-    */
+  /* end login example css */
 .project-snapshot {
     display: grid;
     padding: 5rem 5rem;
@@ -3249,15 +2945,7 @@ h3.label-phase {
     font-color: #fff;
     margin: 5rem 0rem;
 }
-#broccoli-hero {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-}
 
 .hero {
   margin: 5rem 0rem;
-
 }

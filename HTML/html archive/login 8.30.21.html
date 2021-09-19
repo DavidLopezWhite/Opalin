@@ -1,0 +1,20 @@
+<body class="login">
+    <form id="loginForm" class="login" onSubmit="return validateForm()">
+      <h2 class="login">Login</h2>
+      <div class="label-inputs">
+         <label for="username">Username: (required)
+         </label>
+       <br>
+         <input type="text" id="username" class="input" required title="Please enter a username" aria-required="true" placeholder="davidux"/>
+       <br>
+         <label for="password">Password:
+         </label>
+       <br> 
+         <input type="password" id="password" class="input" pattern="^(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[0-9]).*$" required title="Password must contain at least one upper and one lower case letter, and at least one number" aria-required="true" placeholder="@ccessibil1tY"/>
+       <br>
+      </div>
+      <div class="submit-button">
+        <input type="submit" value="Submit" class="login-button" id="button">
+      </div>
+    </form>
+  </body>

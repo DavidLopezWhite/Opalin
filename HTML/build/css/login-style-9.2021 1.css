@@ -1,0 +1,82 @@
+  /* login example css */
+
+  body.login {
+    background: #145C5C;
+    font-family: helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: .05rem;
+  }
+  form.login {
+    margin: 72px auto 72px auto;
+    display: block;
+    padding: 30px;
+    min-width: 300px;
+    max-width: 500px;
+    text-align: left;
+    background: #fff;
+    border: 1px solid #151515;
+    border-radius: 4px;
+  }
+  h2.login {
+    padding: 16px 0px 0px 0px;
+    margin: 0px 0px 16px 0px;
+    font-size: 28px;
+    text-align: center;
+    background: #fff;
+  }
+  .label-inputs {
+    display: block;
+    padding: 60px;
+  }
+  .login-submit {
+    text-align: center;
+  }
+  .input {
+    padding: 36px;
+  }
+  /*#username {
+    padding: 0px 0px 16px 0px;
+  }
+  */
+  .login-button {
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    color: 000;
+    padding: 16px 16px;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    max-width: 300px;
+    margin: auto;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer
+    letter-spacing: 0.1em;
+    border: 1px solid #151515;
+    width: 100%;
+  }
+  .submit-button {
+    text-align: center;
+  }
+  #username {
+    margin: 10px 0px 40px 0px;
+  }
+  input[type=text], input[type=password] {
+    box-sizing: border-box;
+    margin: 10px 0px;
+    padding: 6px;
+    font-size: 16px;
+    border: 1px solid #151515;
+    border-radius: 4px;
+    width: 100%;
+  }
+  input:focus {
+    outline: 2px;
+    border-width: 2px;
+    border-color: #0000FF;
+    box-shadow: 1px 1px 5px grey;
+  }
+  .button:hover {
+    background-color: #4B0082;
+  }
